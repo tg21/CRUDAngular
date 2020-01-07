@@ -1,4 +1,4 @@
-﻿const callServer = angular.module('tracker').service('callServer', ['$http', function ($http) {
+﻿const callServer = angular.module('tracker').service('callServer', ['$http', function($http) {
     this.getDataFromServer = function (url) {
         return $http({ method: "GET", url: url });
     }

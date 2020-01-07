@@ -1,12 +1,13 @@
 ﻿<body ng-controller="loginController" style="background-color:orangered">
 <div >
     <form>
-        USERNAME:<input id="uname" ng-model="uname" placeholder="{{pltext}}" type="text"/>
+        USERNAME:<input id="uname" ng-model="id" placeholder="UserID" type="number"/>
         Passwrod:<input id="pass" ng-model="pass"   placeholder="password" type="password" /><br />
 
         <button  type="button" id="submit" ng-click="onLogin()">Login</button>
     </form>
     <h3>Your Name is {{uname}}</h3>
+    <h3>Your Class is {{class}}</h3>
    <!---- <script type="text/javascript" src="../controllers/loginController.js"></script>-->
 </div>
 </body>

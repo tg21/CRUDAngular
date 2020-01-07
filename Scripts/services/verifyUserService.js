@@ -7,19 +7,19 @@
             var promise = callServer.sendDataToServer(dataToSend, loginUrl);
             return promise;
     };
-   /* const loginUrl = urls.loginUrl;
+    /*const loginUrl = urls.loginUrl;
 
     var checkUser = {
         'verifyUserDetailsAndStore': null
     };
 
-    checkUser.verifyUserDetailsAndStore = function (username, password) {
+    var pr;
+    function doIT(username, password) {
         var dataToSend = { UserName: username, Password: password };
         var promise = callServer.sendDataToServer(dataToSend, loginUrl);
-        return promise;
+        pr =  promise;
     }
-    return checkUser;*/
-
-
-
+    checkUser.verifyUserDetailsAndStore = pr;
+    return checkUser;
+*/
 }]);
