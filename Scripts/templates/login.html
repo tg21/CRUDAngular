@@ -8,6 +8,13 @@
     </form>
     <h3>Your Name is {{uname}}</h3>
     <h3>Your Class is {{class}}</h3>
+
+    <h1> File Upload</h1>
+    <form enctype="multipart/form-data">
+        <input id="upload" type=file>
+        <input type="button" value="upload" onclick="print()">
+        <input type="button" value="upload1" ng-click="upload()">
+    </form>
    <!---- <script type="text/javascript" src="../controllers/loginController.js"></script>-->
 </div>
 </body>

@@ -11,7 +11,7 @@ using System.Net;
 namespace CRUDAngular.Controllers
 {
     /* https://stackoverflow.com/questions/28420013/asp-net-web-api-routing-broken */
-    [RoutePrefix("api/Login")]
+    /*[RoutePrefix("api/Login")]*/
     public class LoginController : ApiController
     {
         private readonly ILoginDetails _ILoginDetails;
@@ -19,8 +19,8 @@ namespace CRUDAngular.Controllers
         {
             _ILoginDetails = ilogin;
         }
-        /*[Route("api/Login/LoginUrl")]*/
-        [Route("LoginUrl")]
+        [Route("api/Login/LoginUrl")]
+        /*[Route("LoginUrl")]*/
         [HttpPost]
         public IHttpActionResult PostFiles(LoginRequestModel loginData)
         {
